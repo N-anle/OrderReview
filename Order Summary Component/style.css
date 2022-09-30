@@ -1,0 +1,166 @@
+/*Setting Variables*/
+:root{
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+
+  --neutral-very-pale-blue:hsl(225, 100%, 98%);
+  --neutral-desaturated-blue:hsl(224, 23%, 55%);
+  --neutral-dark-blue:hsl(223, 47%, 23%);
+
+  --fs:1rem;
+
+  --ff:'Red Hat Display', Serif;
+
+  --fw-500:500;
+  --fw-700:700;
+  --fw-900:900;
+}
+
+
+/*Resetting the page*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:var(--neutral-very-pale-blue);
+}
+
+.card{
+    border: 1px solid transparent;
+    width: 320px;
+    height: 530px;
+    overflow: hidden;
+}
+.img{
+    width: 350px;
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:white;
+    border-radius: 10px;
+}
+
+.card{
+    text-align: center;
+    line-height: 1.6;
+}
+
+.text{
+    font-family: var(--ff);
+    font-size: .8rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.plans{
+    border: 1px solid transparent;
+    padding:10px 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    background-color:var(--neutral-very-pale-blue) ;
+    border-radius: 10px;
+}
+
+.plans h2,p{
+    display: inline;
+}
+
+.plans h2{
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+}
+
+.pricing{
+    position: relative;
+    right: 100px;
+}
+
+.plans a{
+    color:var(--primary-bright-blue) ;
+    position: relative;
+    bottom: 13px;
+}
+
+button{
+    display: block;
+    align-self: center;
+    border: 1px solid transparent;
+    box-shadow: 0 20px 15px var(--primary-pale-blue);
+}
+
+button{
+    background-color: var(--primary-bright-blue);
+    position: relative;
+    top: 20px;
+    margin: auto;
+    height: 40px;
+    width: 290px;
+    border-radius: 5px;
+}
+
+.buttontext{
+    color: var(--neutral-very-pale-blue);
+}
+
+.cancel{
+    position: relative;
+    top: 40px;
+}
+
+.cancel a{
+    text-decoration: none;
+    color: var(--neutral-desaturated-blue);
+}
+
+.change{
+    padding-right: 10px;
+}
+
+.maintext h1{
+    color: var(--neutral-dark-blue);
+}
+
+.maintext p{
+    color: var(--neutral-desaturated-blue)
+}
+
+.pricing{
+    color: var(--neutral-desaturated-blue);
+}
+
+h2{
+    font-size: 1.25rem;
+    color: var(--neutral-dark-blue);
+}
+
+.change:hover a:hover{
+    text-decoration: none;
+    opacity: .75;
+}
+
+.cancel1:hover{
+    color: var(--neutral-dark-blue);
+    font-weight: var(--fw-900);
+}
+
+button:hover{
+    opacity: .6;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+}
